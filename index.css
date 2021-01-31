@@ -19,6 +19,19 @@ html {
 #header div {
   display: block;
 }
+
+.lang {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.lang:hover {
+  opacity: 0.8;
+}
+.english {
+  display: none;
+}
+
 #title {
   font-size: 40px;
   background-image: linear-gradient(to left, #ff416c 0%, #ff4b2b 100%);
@@ -65,6 +78,7 @@ html {
 #tagline {
   font-size: 33px;
   width: 60%;
+  line-height: 2.5rem;
 }
 #portfolio {
   width: 80%;
@@ -238,7 +252,7 @@ button:focus {
   }
   #tagline {
     width: 90%;
-    font-size: 30px;
+    font-size: 24px;
   }
   .btn_one {
     font-size: 14px;
@@ -247,5 +261,60 @@ button:focus {
   .btn_two {
     font-size: 14px;
     padding: 8px 20px;
+  }
+  .project img {
+    width: 85%;
+    height: 85%;
+  }
+  .fa {
+    font-size: 59px;
+  }
+}
+
+@media (max-width: 400px) {
+  #links {
+    display: flex;
+    flex-direction: column;
+  }
+  #links a {
+    text-decoration: underline;
+    font-size: 0.8rem;
+  }
+  #tagline {
+    font-size: 20px;
+  }
+  #skills img {
+    width: 100px;
+    height: 100px;
+  }
+  .btn_one {
+    font-size: 10px;
+    padding: 8px 20px;
+  }
+  .btn_two {
+    font-size: 10px;
+    padding: 8px 20px;
+  }
+  .lang {
+    top: 0px;
+    left: 0px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 280px) {
+  .project-link {
+    margin: 0px 3px !important;
+  }
+  #links a {
+    font-size: 0.6rem;
+  }
+  #tagline {
+    font-size: 14px;
+  }
+  .lang {
+    top: 160px;
+    left: 100px;
+    margin: 0;
   }
 }

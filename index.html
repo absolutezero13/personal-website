@@ -34,28 +34,38 @@
   </head>
   <body>
     <div id="header" class="animated">
+      <button class="btn_one lang turkish">TR</button>
+      <button class="btn_one lang english">ENG</button>
       <div id="title">ilker sarıca.</div>
       <br />
       <div id="links">
-        <a href="#skills">Skills</a>
-        <a href="#work" style="margin: 0px 60px">Projects</a>
-        <a href="#footer">Contact</a>
+        <a class="nav-skills" href="#skills">Skills</a>
+        <a class="nav-project" href="#work" class="project-link">Projects</a>
+        <a class="nav-contact" href="#footer">Contact</a>
       </div>
     </div>
 
     <center>
       <div id="middle">
         <div id="tagline" style="animation-delay: 1.8s">
-          Hello, my name is İlker. I'm a software developer. Down below, you are
-          going to see some of my skills and projects.<br />
-          <a href="#skills"> <button class="btn_one">Let's See</button></a>
+          <p class="tagline">
+            Hello, my name is İlker, and I am a software developer. Welcome to
+            my site to look at some of the projects I’ve been working on! As
+            well as contact information and skills.
+          </p>
+          <br />
+          <a href="#skills">
+            <button style="margin-top: 0" class="btn-lets btn_one">
+              Let's See
+            </button></a
+          >
         </div>
       </div>
     </center>
 
     <div id="portfolio">
       <div id="skills">
-        <h1 style="margin-bottom: 5%">Skills</h1>
+        <h1 class="skillsh1" style="margin-bottom: 5%">Skills</h1>
         <div>
           <img src="./icons-software/react.png" alt="" />
           <img src="./icons-software/javascript.png" alt="" />
@@ -65,19 +75,19 @@
           <img src="./icons-software/git.png" alt="" />
         </div>
 
-        <h1 style="margin-top: 10vh">What's on the way?</h1>
+        <h1 class="onway" style="margin-top: 10vh">What's on the way?</h1>
         <div>
           <img src="./icons-software/node-js.png" alt="" />
         </div>
       </div>
-      <p>Enough icons, let's see some projects.</p>
+      <p class="enough">Enough icons, let's see some projects.</p>
       <div id="work">
-        <h1>Projects</h1>
+        <h1 class="projectsh1">Projects</h1>
 
         <div class="project">
           <h2>Javascript Quiz</h2>
           <img src="./images/quizPic.PNG" alt="" />
-          <p>
+          <p class="quiz">
             A javascript fundamentals quiz app, written with vanilla javascript.
             <br />
             Single page and fully responsive. Questions are also written by me.
@@ -91,20 +101,20 @@
             target="blank"
             href="https://absolutezero13.github.io/javascript-quiz/"
           >
-            <button class="btn_one">Live View</button>
+            <button class="btn-live btn_one">Live View</button>
           </a>
           <a
             target="blank"
             href="https://github.com/absolutezero13/javascript-quiz"
           >
-            <button class="btn_two">Source Code</button></a
+            <button class="btn-source btn_two">Source Code</button></a
           >
         </div>
 
         <div class="project">
           <h2>Calculator (React)</h2>
           <img src="./images/calculator.PNG" alt="" />
-          <p>
+          <p class="calculator">
             A basic calculator project to try React skills such as state
             management and dealing with props.
           </p>
@@ -112,19 +122,19 @@
             target="blank"
             href="https://absolutezero13.github.io/calculator-react/"
           >
-            <button class="btn_one">Live View</button></a
+            <button class="btn-live btn_one">Live View</button></a
           >
           <a
             target="blank"
             href="https://github.com/absolutezero13/calculator-react"
           >
-            <button class="btn_two">Source code</button></a
+            <button class="btn-source btn_two">Source code</button></a
           >
         </div>
         <div class="project">
           <h2>Decision Maker (React)</h2>
           <img src="./images/Decision.PNG" alt="" />
-          <p>
+          <p class="decision">
             If you want to put your fate in the hands of Math.random(), this
             project is for you. <br />
             Decision Maker is built with React. <br />
@@ -136,39 +146,42 @@
             target="blank"
             href="https://absolutezero13.github.io/decision-maker"
           >
-            <button class="btn_one">Live View</button>
+            <button class="btn-live btn_one">Live View</button>
           </a>
           <a
             target="blank"
             href="https://github.com/absolutezero13/decision-maker"
           >
-            <button class="btn_two">Source code</button>
+            <button class="btn-source btn_two">Source code</button>
           </a>
         </div>
         <div class="project">
           <h2>English Slang</h2>
           <img src="./images/english.PNG" alt="" />
-          <p>
-            An Api to help you learn English slang words. But it doesn't only do
-            that. <br />
-            It has a response even for your name. Feel free the try it out.
+          <p class="english-slang">
+            Here is an Api to help you learn and find definitions of English
+            slang words. But it doesn't only do that. <br />
+            Input a word, and you will never be miffed again. Put in your name
+            for an individual definition.
           </p>
           <a
             target="blank"
             href="https://absolutezero13.github.io/english-slang/"
-            ><button class="btn_one">Live View</button></a
+            ><button class="btn-live btn_one">Live View</button></a
           >
           <a
             target="blank"
             href="https://github.com/absolutezero13/english-slang"
           >
-            <button class="btn_two">Source code</button></a
+            <button class="btn-source btn_two">Source code</button></a
           >
         </div>
       </div>
     </div>
     <div id="footer">
-      <h1>Here is some platforms where you can contact me.</h1>
+      <h1 class="contacth1">
+        Here are some platforms where you can contact me.
+      </h1>
       <a
         href="https://api.whatsapp.com/send?phone=905546906076"
         class="fa fa-whatsapp"
