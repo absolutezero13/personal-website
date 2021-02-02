@@ -38,7 +38,6 @@ html {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-size: 500% 500% !important;
   -webkit-animation: Gradient 20s ease infinite;
   -moz-animation: Gradient 20s ease infinite;
   -o-animation: Gradient 20s ease infinite;
@@ -66,7 +65,7 @@ html {
   height: 80vh;
   background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
     url("./images/middle.jpg") center center fixed;
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   color: white;
   display: flex;
@@ -102,7 +101,7 @@ html {
   padding: 2vh 0px !important;
 }
 #skills img {
-  width: 150;
+  width: 150px;
   height: 150px;
 }
 #work {
@@ -253,6 +252,7 @@ button:focus {
   #tagline {
     width: 90%;
     font-size: 24px;
+    margin: auto;
   }
   .btn_one {
     font-size: 14px;
