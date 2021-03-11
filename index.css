@@ -4,7 +4,7 @@ html {
   margin: 0px;
   font-family: "Comfortaa", cursive;
   font-weight: bold;
-  color: #fff;
+  color: rgb(216, 209, 209);
   background: rgb(26, 25, 25);
   scroll-behavior: smooth;
 }
@@ -137,7 +137,8 @@ html {
 .project img {
   width: 53rem;
   height: 25rem;
-  border: 1px solid rgb(87, 85, 85);
+  border: 2px solid rgb(87, 85, 85);
+  border-radius: 5px;
 }
 .project p {
   max-width: 70%;
@@ -194,10 +195,10 @@ button:focus {
   background: #f1f1f1;
 }
 ::-webkit-scrollbar-thumb {
-  background: #000;
+  background: rgb(26, 25, 25);
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: rgb(68, 67, 67);
 }
 
 @keyframes Gradient {

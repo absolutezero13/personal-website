@@ -17,7 +17,8 @@ const englishSlang = document.querySelector(".english-slang");
 const btnLive = [...document.querySelectorAll(".btn-live")];
 const btnSource = [...document.querySelectorAll(".btn-source")];
 const contactHeader = document.querySelector(".contacth1");
-
+const meerkast = document.querySelector(".meerkast");
+const solarSystem = document.querySelector(".solar-system");
 turkish.addEventListener("click", () => {
   english.style.display = "initial";
   turkish.style.display = "none";
@@ -40,6 +41,10 @@ turkish.addEventListener("click", () => {
     "Eğer kaderinizi Math.random() fonksiyonunun ellerine bırakmak istiyorsanız, bu uygulama sizin için üretildi. <br/> Decision maker react ile yazıldı. <br/> Yazdığınız seçenekler arasından bir tanesi sizin için seçip, sizin için bir karara varıyor. Ayrıca seçenekleriniz yerel olarak depolanıyor ki hayattaki ikilemlerinizi unutmayasınız.";
   englishSlang.innerHTML =
     "English Slang, İngilizce argo kelimelerin anlamlarını bulmanıza yarayan bir Api ile yazılmıştır. <br/> Ama sadece bu kadarla kalmıyor. İstediğiniz kelimeyi, hatta isminizi de yazabilirsiniz. Sonuçlar sizi şaşırtabilir.";
+  meerkast.innerHTML =
+    "Meerkast bir streaming servis için demo niteliğinde bir uygulamadır. React ve Typescript kombinasyonu kullanılmıştır. State management için Redux kullanılmakla birlikte, kullanıcı kimlik doğrulaması ve kontakt ile iletilen mesajların depolanması için Firebase'ten yararlanılmıştır.";
+  solarSystem.innerHTML =
+    "Güneş sistemi'ndeki gezegenler ve bu gezegenlerin yörünge zamanlarını orantılı olarak yansıttığım bu uygulamayı React ve Typescript ile kodladım. State management için ise Context API'dan yararlandım. Bu evrende 10 saniye bir yıla eşit ve ayrıca input alanından bu oran değiştirilebilir.";
   btnLive.forEach((e) => (e.innerHTML = "Canlı Site"));
   btnSource.forEach((e) => (e.innerHTML = "Kaynak Kod"));
   contactHeader.innerHTML =
