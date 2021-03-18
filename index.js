@@ -19,6 +19,7 @@ const btnSource = [...document.querySelectorAll(".btn-source")];
 const contactHeader = document.querySelector(".contacth1");
 const meerkast = document.querySelector(".meerkast");
 const solarSystem = document.querySelector(".solar-system");
+const githubEggs = document.querySelector(".github-eggs");
 turkish.addEventListener("click", () => {
   english.style.display = "initial";
   turkish.style.display = "none";
@@ -45,6 +46,10 @@ turkish.addEventListener("click", () => {
     "Meerkast bir streaming servis için demo niteliğinde bir uygulamadır. React ve Typescript kombinasyonu kullanılmıştır. State management için Redux kullanılmakla birlikte, kullanıcı kimlik doğrulaması ve kontakt ile iletilen mesajların depolanması için Firebase'ten yararlanılmıştır.";
   solarSystem.innerHTML =
     "Güneş sistemi'ndeki gezegenler ve bu gezegenlerin yörünge zamanlarını orantılı olarak yansıttığım bu uygulamayı React ve Typescript ile kodladım. State management için ise Context API'dan yararlandım. Bu evrende 10 saniye bir yıla eşit ve ayrıca input alanından bu oran değiştirilebilir.";
+
+  githubEggs.innerHTML =
+    "Github Eggs Github API'nı kullanarak repository ve kullanıcıları aratabilmenizi sağlayan bir uygulamadır. React, Typescript, Context API, Redux, React Hooks and SCSS ile kodlanmıştır. Ayrıca repoları kaydedebilir ve daha sonra kontrol edebilirsiniz.  ";
+
   btnLive.forEach((e) => (e.innerHTML = "Canlı Site"));
   btnSource.forEach((e) => (e.innerHTML = "Kaynak Kod"));
   contactHeader.innerHTML =
