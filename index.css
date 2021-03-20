@@ -140,8 +140,14 @@ html {
   border: 2px solid rgb(87, 85, 85);
   border-radius: 5px;
 }
+
 .project p {
-  max-width: 70%;
+  max-width: 80%;
+}
+.wunder {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .btn_two {
@@ -214,6 +220,9 @@ button:focus {
 }
 
 @media (max-width: 900px) {
+  .project p {
+    max-width: 100%;
+  }
   #header {
     width: 94%;
     padding: 15% 3%;

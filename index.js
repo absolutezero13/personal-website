@@ -20,10 +20,10 @@ const contactHeader = document.querySelector(".contacth1");
 const meerkast = document.querySelector(".meerkast");
 const solarSystem = document.querySelector(".solar-system");
 const githubEggs = document.querySelector(".github-eggs");
+const wunderfulUsers = document.querySelector(".wunderful-users");
 turkish.addEventListener("click", () => {
   english.style.display = "initial";
   turkish.style.display = "none";
-
   navSkills.innerHTML = "Beceriler";
   navProject.innerHTML = "Projeler";
   navContact.innerHTML = "İletişim";
@@ -40,8 +40,6 @@ turkish.addEventListener("click", () => {
     "React'ın temelleri üzerinde çalışmak için geliştirilen, basit bir hesap makinesi uygulaması.";
   decisionMaker.innerHTML =
     "Eğer kaderinizi Math.random() fonksiyonunun ellerine bırakmak istiyorsanız, bu uygulama sizin için üretildi. <br/> Decision maker react ile yazıldı. <br/> Yazdığınız seçenekler arasından bir tanesi sizin için seçip, sizin için bir karara varıyor. Ayrıca seçenekleriniz yerel olarak depolanıyor ki hayattaki ikilemlerinizi unutmayasınız.";
-  englishSlang.innerHTML =
-    "English Slang, İngilizce argo kelimelerin anlamlarını bulmanıza yarayan bir Api ile yazılmıştır. <br/> Ama sadece bu kadarla kalmıyor. İstediğiniz kelimeyi, hatta isminizi de yazabilirsiniz. Sonuçlar sizi şaşırtabilir.";
   meerkast.innerHTML =
     "Meerkast bir streaming servis için demo niteliğinde bir uygulamadır. React ve Typescript kombinasyonu kullanılmıştır. State management için Redux kullanılmakla birlikte, kullanıcı kimlik doğrulaması ve kontakt ile iletilen mesajların depolanması için Firebase'ten yararlanılmıştır.";
   solarSystem.innerHTML =
@@ -49,6 +47,8 @@ turkish.addEventListener("click", () => {
 
   githubEggs.innerHTML =
     "Github Eggs Github API'nı kullanarak repository ve kullanıcıları aratabilmenizi sağlayan bir uygulamadır. React, Typescript, Context API, Redux, React Hooks and SCSS ile kodlanmıştır. Ayrıca repoları kaydedebilir ve daha sonra kontrol edebilirsiniz.  ";
+  wunderfulUsers.innerHTML =
+    "Mobil geliştiriciliğe odaklanmadığım için çok fazla mobil uygulama geliştirme fırsatı bulamadım fakat React ile edindiğim bilgileri React Native'e aktararak ufak bir uygulama kodladım. Wunderful Users'da rastgele kullanıcı verisi üreten bir API kullanarak, çekilen veriyi ekrana bir çeşit veri görselleştirmesi ile yansıtmaya çalıştım.";
 
   btnLive.forEach((e) => (e.innerHTML = "Canlı Site"));
   btnSource.forEach((e) => (e.innerHTML = "Kaynak Kod"));
