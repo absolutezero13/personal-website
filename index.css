@@ -112,6 +112,7 @@ html {
 ::placeholder {
   color: #fff;
 }
+
 .btn_one {
   color: white;
   padding: 10px 40px;
@@ -124,7 +125,9 @@ html {
   transition: 0.4s ease-in-out;
   margin: 30px 10px;
 }
-
+.project a {
+  color: #000;
+}
 .btn_one:hover {
   background: white;
   cursor: pointer;
