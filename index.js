@@ -62,3 +62,5 @@ english.addEventListener("click", (e) => {
   turkish.style.display = "initial";
   location.reload();
 });
+
+//
